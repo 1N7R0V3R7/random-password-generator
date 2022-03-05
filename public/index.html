@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Password Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="h-screen flex justify-center items-center bg-[#00f086]">
+    <section class="bg-[#202737] text-white px-8 pb-8 max-w-lg">
+        <header class="pt-20">
+            <p class="text-4xl font-bold">
+                Generate a 
+                <span class="text-[#00f086]">random password</span>
+            </p>
+            <p class="text-gray-400 py-4">Never use an insecure password again</p>
+            <button class="flex bg-[#00c682] mt-8 px-4 py-2 rounded-lg" id="generate-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-4" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd" />
+                </svg>
+                Generate Password
+            </button>
+            <input 
+                type="number" 
+                id="input-el" 
+                class="bg-transparent mt-4 outline-0 outline-hidden"
+                placeholder="Password Length"
+                autofocus
+            >
+        </header>
+        <hr class="my-8">
+        <div class="grid grid-cols-2 gap-6" id="display-el">
+            <div class="password" id="password1">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#202737] mx-auto" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z" />
+                </svg>
+            </div>
+            <div class="password" id="password2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#202737] mx-auto" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z" />
+                </svg>
+            </div>
+            <div class="password" id="password3">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#202737] mx-auto" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z" />
+                </svg>
+            </div>
+            <div class="password" id="password4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#202737] mx-auto" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z" />
+                </svg>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

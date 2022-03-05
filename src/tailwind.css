@@ -1,0 +1,13 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+    .password {
+        @apply bg-[#29324a] text-[#00f086] text-center rounded-md py-2 px-6 break-all;
+    }
+}
